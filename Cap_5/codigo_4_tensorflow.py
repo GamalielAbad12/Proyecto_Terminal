@@ -1,3 +1,16 @@
+# Este programa fue desarrollado con el propósito de aprender a construir una red neuronal
+# convolucional (CNN) capaz de detectar si en una imagen aparece una mano o no.
+# Para ello, utilizamos un conjunto de imágenes organizadas en carpetas, donde cada carpeta
+# representa una categoría distinta. En este caso tenemos dos clases:
+# una carpeta llamada "con mano" y otra llamada "sin mano".
+#
+# El modelo aprenderá observando muchos ejemplos de ambas categorías hasta identificar
+# patrones visuales que le permitan clasificar imágenes nuevas que nunca haya visto.
+#
+# Para lograrlo utilizamos TensorFlow como biblioteca principal de inteligencia artificial,
+# NumPy para trabajar con arreglos numéricos, y herramientas auxiliares de TensorFlow
+# para cargar, procesar y normalizar imágenes antes de entrenar la red.
+
 import tensorflow as tf
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 import numpy as np
