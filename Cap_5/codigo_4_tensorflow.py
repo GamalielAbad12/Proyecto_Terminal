@@ -107,7 +107,7 @@ modelo.fit(
 print("Entrenamiento terminado")
 
 # Probamos el modelo con una imagen externa.
-img = image.load_img('dataset_img_manos/test_1.jpg', target_size=(128, 128))
+img = image.load_img('dataset_img_manos_test/test_1.jpg', target_size=(128, 128))
 img_array = image.img_to_array(img) / 255.0
 img_array = np.expand_dims(img_array, axis=0)
 
@@ -115,7 +115,7 @@ prediccion = modelo.predict(img_array)
 print("Hay una mano" if prediccion[0][0] > 0.5 else "No hay mano")
 
 # Segunda prueba con otra imagen.
-img = image.load_img('test_2.jpg', target_size=(128, 128))
+img = image.load_img('dataset_img_manos_test/test_2.jpg', target_size=(128, 128))
 img_array = image.img_to_array(img) / 255.0
 img_array = np.expand_dims(img_array, axis=0)
 
