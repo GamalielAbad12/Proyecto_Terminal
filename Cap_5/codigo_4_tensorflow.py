@@ -20,7 +20,7 @@ from tensorflow.keras.preprocessing import image
 # Estas imágenes están organizadas en lo que llamamos un *dataset*. En nuestro caso, el dataset contiene dos carpetas:
 # una titulada "con mano" y otra llamada "sin mano".
 
-ruta_dataset = 'dataset/'
+ruta_dataset = 'dataset_img_manos/'
 
 # TensorFlow proporciona la herramienta ImageDataGenerator, la cual administra, reescala y normaliza las imágenes.
 # El argumento `validation_split=0.2` indica que el 20% de las imágenes se usarán para validación y el 80% restante para entrenamiento.
@@ -107,7 +107,7 @@ modelo.fit(
 print("Entrenamiento terminado")
 
 # Probamos el modelo con una imagen externa.
-img = image.load_img('test_1.jpg', target_size=(128, 128))
+img = image.load_img('dataset_img_manos/test_1.jpg', target_size=(128, 128))
 img_array = image.img_to_array(img) / 255.0
 img_array = np.expand_dims(img_array, axis=0)
 
