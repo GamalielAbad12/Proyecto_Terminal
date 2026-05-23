@@ -39,7 +39,7 @@ modelo.compile(optimizer='adam',
 # - El número de épocas (repeticiones sobre todos los datos).
 # - verbose=0 desactiva los mensajes para que no se vea tanto texto.
 # Podemos cambiar a 1 si queremos ver el progreso.
-modelo.fit(entradas, salidas, epochs=9000, verbose=0)
+modelo.fit(entradas, salidas, epochs=1000, verbose=0)
 
 # Una vez entrenado el modelo, lo probamos con las mismas entradas para ver si aprendió bien.
 # Usamos un ciclo para predecir una por una y ver los resultados.
